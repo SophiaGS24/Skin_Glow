@@ -22,7 +22,8 @@ public class UsuarioService {
             throw new UsuarioJaExiste();
         }
 
-        String senhaCriptografada = BCrypt.withDefaults().hashToString(12, userModel.getSenha().toCharArray());
+        String senhaCriptografada = BCrypt.withDefaults().
+        hashToString(12, userModel.getSenha().toCharArray());
         userModel.setSenha(senhaCriptografada);
 
         return usuarioRepository.save(userModel);
