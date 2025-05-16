@@ -22,13 +22,14 @@
         }
         .slideshow-container {
             position: relative;
-            max-width: 500px;
-            margin: auto;
+            max-width: 100%;
+            margin: 0 auto;
             overflow: hidden;
         }
         .slides {
             display: flex;
             width: 300%;
+            height: 100%;
             animation: slide 9s infinite;
         }
         .slides img {
@@ -60,9 +61,16 @@
 <meta charset= "UTF-8">
 <title> SKIN GLOW </title>
 <script src="https://cdn.tailwindcss.com"></script>
+
+<style { 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+></style>
 </head>
 
-<body class="text-gray-800">
+<body class="w-full m-0 p-0 text-gray-800">
     <!-- Header -->
     <header class="flex justify-between items-center p-4">
         <div class="text-2xl font-bold">SKIN GLOW</div>
@@ -82,25 +90,25 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="flex flex-col md:flex-row items-center p-8">
-        <div class="md:w-1/2">
+    <section class="w-full p-0 m-0">
+        <div class="w-full">
             <h1 class="text-4xl font-bold mb-4 text-amber-800">Sua pele merece o melhor cuidado.</h1>
             <a href="#products" class="btn inline-block mb-4">Conheça nossos produtos</a>
             <!-- Slideshow -->
-            <div class="slideshow-container">
-                <div class="slides">
-                    <img src="cremehidratante.PNG" alt="Creme Hidratante">
-                    <img src="aloeveracreme.jpg" alt="Gel Aloe Vera">
-                    <img src="serumfacial.webp" alt="Tônico Facial">
+            <div class="slideshow-container w-full">
+                <div class="slides w-full">
+                    <img class="w-full h-auto" src="cremehidratante.PNG" alt="Creme Hidratante">
+                    <img class="w-full h-auto" src="aloeveracreme.jpg" alt="Gel Aloe Vera">
+                    <img class="w-full h-auto" src="serumfacial.webp" alt="Tônico Facial">
                 </div>
             </div>
         </div>
-        <div class="md:w-1/2">
-            <div class="w-full h-100 bg-gray-800 flex items-center justify-center">
-                <img src="img4.jpeg" alt="Skin GLOW" class="product-img">
-            </div>
+        
         </div>
     </section>
+
+    
+
 
     <!-- Products Section -->
     <section id="products" class="p-8">
@@ -142,12 +150,12 @@
     </section>
 
     <!-- About the Brand Section -->
-    <section class="flex flex-col md:flex-row items-center p-8">
-        <div class="md:w-1/2">
+    <section class="flex flex-col md:flex-row items-center p-8 gap-8">
+        <div class="md:w-1/2 w-full flex justify-center">
             <div class="w-full h-98 bg-gray-48 flex items-center items-center mb-4">
-                    <img src="img4.jpeg" alt="logomarca" class="product-img">
+                    <img src="img4.jpeg" alt="logomarca" class="product-img w-full max-w-md object-cover">
         </div>
-        <div class="md:w-1/2 md:pl-8 mt-4 text-left">
+        <div class="md:w-1/2 w-full md:pl-8 text-left">
             <h2 class="text-3xl font-bold mb-4">Sobre a Marca</h2>
             <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat nunc risus eu urna. Aenean visus.</p>
             <a href="#" class="btn inline-block">Bio +</a>
