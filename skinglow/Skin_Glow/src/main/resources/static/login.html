@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Skin Glow</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f0e1; /* Tom de bege claro */
+            color: #333; /* Cinza escuro para o texto */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .login-container {
+            background-color: #f8f3e7; /* Tom de bege ainda mais claro */
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            max-width: 90%;
+        }
+
+        h2 {
+            color: #5e5441; /* Marrom claro */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            color: #776e65; /* Marrom mais escuro */
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            border: 1px solid #e0cba8; /* Tom de bege mais escuro para a borda */
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        button {
+            background-color: #a3916a; /* Tom de marrom médio */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #8c7b55;
+        }
+
+        .link-cadastro {
+            text-align: center;
+            margin-top: 15px;
+            color: #776e65;
+        }
+
+        .link-cadastro a {
+            color: #a3916a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-cadastro a:hover {
+            text-decoration: underline;
+        }
+
+        /* Estilo para o link de voltar */
+        .link-voltar {
+            text-align: center;
+            margin-top: 10px;
+            color: #776e65;
+        }
+
+        .link-voltar a {
+            color: #a3916a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .link-voltar a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Acesse sua conta Skin Glow</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <div class="link-cadastro">
+            Não tem uma conta? <a href="./cadastro.html">Cadastre-se aqui</a>
+        </div>
+        <div class="link-voltar">
+            <a href="./skinglow.html">Voltar à página inicial</a>
+        </div>
+    </div>
+</body>
+</html>

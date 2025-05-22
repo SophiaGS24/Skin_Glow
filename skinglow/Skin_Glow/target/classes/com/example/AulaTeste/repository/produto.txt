@@ -1,0 +1,57 @@
+public class Main {
+
+public static void main (string [] args ){
+
+Produto produto = New Produto();
+produto.nome= "Argila Verde Skin Glow";
+produto.descricao= "Máscara mineral para peles oleosas e acneicas. Desintoxica, esfolia suavemente e equilibra a oleosidade";
+produto.ingredientes= "argila verde pura";
+produto.modo_de_uso= "Misture com água, soro fisiológico até formar uma pasta. Aplique no rosto limpo, deixe agir por 10-15 minutos e enxágue com água morna."
+produto.precaucoes= " Não deixar secar completamente na pele para evitar ressecamento.";
+produto.validade= "12 meses";
+produto.conservacao=" Armazenar em local seco, fresco e ao abrigo da luz.";
+
+Produto produto2 = New Produto();
+produto.nome= "Esfoliante Facial Skin Glow";
+produto.descricao= "Esfoliação suave com vegetais. Promove renovação celular e maciez à pele sem agredir.";
+produto.ingredientes= " óleo de girassol, pó de caroço de damasco, extrato de alecrim.";
+produto.modo_de_uso= "Aplique no rosto úmido, massageie suavemente em movimentos circulares e enxágue. Use de 1 a 2 vezes por semana."
+produto.precaucoes= " Não deixar secar completamente na pele para evitar ressecamento.";
+produto.validade="06 meses";
+produto.conservacao=" Armazenar longe da umidade e luz direta.";
+
+Produto produto3 = New Produto();
+produto.nome= Sérum Facial Skin Glow
+produto.descricao= nutritivo com óleos vegetais e essenciais. Hidratação leve, ação antioxidante e regeneradora. Ideal para uso noturno.
+produto.ingredientes=  óleo de damasco, óleo de jojoba, óleo de rosa mosqueta, vitamina E.
+produto.modo_de_uso=  Aplique de 2 a 4 gotas à noite, na pele limpa, massageando suavemente.
+produto.validade=6 meses
+produto.conservacao= Guardar longe da luz e calor.
+
+Produto produto4 = New Produto();
+produto.nome= Creme Hidratante Facial Skin Glow
+produto.descricao=  Hidratação profunda com extratos vegetais e óleos essenciais. Textura leve e rápida absorção. Uso diário.
+produto.ingredientes= Manteiga de karité, óleo de amêndoas doces, glicerina vegetal, óleo essencial de lavanda, conservante de origem natural.
+produto.modo_de_uso=  Aplicar pequena quantidade sobre o rosto limpo, massageando até completa absorção.
+produto.validade=6 meses
+produto.conservacao= Manter em local fresco e seco, fora da luz solar direta.
+
+Produto produto5 = New Produto();
+produto.nome= Gel de Limpeza Facial Skin Glow
+produto.descricao=  Limpeza suave com extratos naturais e pH equilibrado. Remove impurezas sem ressecar. Ideal para peles sensíveis.
+produto.ingredientes= Tensoativo suave de coco, extrato de babosa, extrato de camomila.
+produto.modo_de_uso= Aplicar pequena quantidade sobre o rosto úmido, massagear e enxaguar. Uso diário. 
+produto.validade=6 meses
+produto.conservacao=Manter em local fresco e ao abrigo da luz.
+
+Produto produto6 = New Produto();
+produto.nome= Sabonete Artesanal Natural Skin Glow
+produto.descricao= Sabonete vegetal com óleos nobres e ervas naturais. Limpeza delicada. Indicado para todos os tipos de pele.
+produto.ingredientes= óleo de oliva saponificado, óleo de coco, óleo de rícino, Argilla, plantas secas e óleos essenciais..
+produto.modo_de_uso= Aplicar sobre a pele molhada, massagear e enxaguar, Uso diário. 
+produto.validade=12 meses
+produto.conservacao= Manter em local seco após o uso para prolongar a durabilidade.
+
+}
+
+}

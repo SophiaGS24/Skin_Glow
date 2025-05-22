@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skincare Brand</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        .flip-container {
+      perspective: 1000px;
+      width: 300px;
+      height: 300px;
+    }
+
+    .flipper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s;
+    }
+
+    .flip-container:hover .flipper {
+      transform: rotateY(180deg);
+    }
+
+    .front, .back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+    }
+
+    .front {
+      z-index: 2;
+    }
+
+    .back {
+      transform: rotateY(180deg);
+    }
+ 
+
+        body {
+            background-color: #eee1d1;
+            font-family: Arial, sans-serif;
+        }
+        .btn {
+            background-color: #D2B48C;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        .btn:hover {
+            background-color: #C19A6B;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .slides {
+            display: flex;
+            width: 300%;
+            height: 100%;
+            animation: slide 9s infinite;
+        }
+        .slides img {
+            width: 100%;
+            height: auto;
+        }
+        .product-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            33% { transform: translateX(-100%); }
+            66% { transform: translateX(-100%); }
+            100% { transform: translateX(0); }
+        }
+        /* Estilo para o menu de categorias */
+        .categories-menu a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #4B3621;
+        }
+        .categories-menu a:hover {
+            color: #C19A6B;
+        }
+    </style>
+</head>
+<meta charset= "UTF-8">
+<title> SKIN GLOW </title>
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style { 
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+></style>
+</head>
+
+<body class="w-full m-0 p-0 text-gray-800">
+    <!-- Header -->
+    <header class="flex justify-between items-center p-4">
+        <div class="text-2xl font-bold">SKIN GLOW</div>
+        
+        <div class="flex items-center">
+            <!-- Adicionando link "Entre ou cadastre-se" -->
+            <a href="./login.html" class="mr-4 text-amber-800 hover:text-amber-600">Entre ou cadastre-se</a>
+            <span class="mr-4"> : </span>
+            <span>🛒</span>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+        <section class="w-full p-0 m-0 flex justify-center items-center flex-col">
+            <div class="w-full text-center">
+            <h1 class="text-4xl font-bold mb-4 text-amber-800">Sua pele merece o melhor cuidado.</h1>
+            <a href="#products" class="btn inline-block mb-4">Conheça nossos produtos</a>
+        </div>
+        </section>
+            <!-- Slideshow -->
+            <div class="slideshow-container w-full">
+                <div class="slides w-full">
+                    <img class="w-full h-auto" src="cremehidratante.PNG" alt="Creme Hidratante">
+                    <img class="w-full h-auto" src="aloeveracreme.jpg" alt="Gel Aloe Vera">
+                    <img class="w-full h-auto" src="serumfacial.webp" alt="Tônico Facial">
+                </div>
+            </div>
+        </div>
+        
+        </div>
+    </section>
+
+    
+
+
+    <!-- Products Section -->
+    <section id="products" class="p-8">
+        <h2 class="text-3xl font-bold text-center mb-8">Principais Produtos</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+    </div>
+    </section>
+
+<!--seção produtos flip -->        
+<section id="products" class="p-8">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div class="flip-container">
+<div class="flip-container">
+  <div class="flipper">
+    <div class="front">
+      <img src="serumfacial.webp" alt="Sérum Facial" class="product-img">
+      <h3 class="text-lg font-semibold">Sérum Facial</h3>
+                <p>R$ 65,00</p>
+                <a href="#" class="btn inline-block mt-2">Comprar</a>
+    </div>
+       </div>
+    <div class="back">
+      <img src="verso.jpg" alt="Verso" width="300" height="300">
+      </div>
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="front">
+      <img src="cremehidratante.PNG" alt="Creme Hidratante" class="product-img">
+      <h3 class="text-lg font-semibold">Creme Hidratante</h3>
+                <p>R$ 55,00</p>
+                <a href="#" class="btn inline-block mt-2">Comprar</a>
+    </div>
+       </div>
+    <div class="back">
+      <img src="verso.jpg" alt="Verso" width="300" height="300">
+      
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="front">
+      <img src="argila.jpeg" alt="Argila" class="product-img">
+      <h3 class="text-lg font-semibold">Argila</h3>
+                <p>R$ 35,00</p>
+                <a href="#" class="btn inline-block mt-2">Comprar</a>
+    </div>
+       </div>
+    <div class="back">
+      <img src="verso.jpg" alt="Verso" width="300" height="300">
+      
+  </div>
+</div>
+
+<div class="flip-container">
+  <div class="flipper">
+    <div class="front">
+      <img src="aloeveracreme.jpg" alt="Hidratante de Aloe Vera" class="product-img">
+      <h3 class="text-lg font-semibold">Hidratante de Aloe Vera</h3>
+                <p>R$ 85,00</p>
+                <a href="#" class="btn inline-block mt-2">Comprar</a>
+    </div>
+       </div>
+    <div class="back">
+      <img src="verso.jpg" alt="Verso" width="300" height="300">
+      
+  </div>
+</div>
+</div>
+</section>
+
+
+<!-- <div class= "flip-container>"
+    ... 
+    ...
+    ...
+
+</div>  -->
+
+
+
+    <!-- About the Brand Section -->
+<br>
+<br>
+<br>
+<br>
+<br>    
+<section id="Brand" class="p-8"> </section>
+       <section class="md:w-1/2 w-full flex justify-center">
+            <div class="w-full h-98 bg-gray-48 flex items-center items-center mb-4">
+                <img src="img4.jpeg" alt="logomarca" class="product-img w-full max-w-md object-cover" style="margin-left: 20px; margin-top: 10px;"> 
+        </div>
+        <div class="md:w-1/2 w-full md:pl-8 text-left">
+            <h2 class="text-3xl font-bold mb-4">Sobre Nós</h2>
+            <p class="mb-4">Nossa missão é realçar a beleza natural com cosméticos desenvoividos com ingredientes orgânicos e sustentáveis. Prezando pela qualidade e pelo cuidado em cada detalhe!</p>
+            <a href="#" class="btn inline-block">Bio +</a>
+        </div>
+    </section>
+<br>
+<br>
+</body>
+</html>
